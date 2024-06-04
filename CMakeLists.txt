@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 set(PATCH_VERSION "2" CACHE INTERNAL "Patch version")
-set(PROJECT_VESRION 0.1.${PATCH_VERSION})
+set(PROJECT_VESRION 0.3.${PATCH_VERSION})
 
 project(homework VERSION ${PROJECT_VESRION})
 
