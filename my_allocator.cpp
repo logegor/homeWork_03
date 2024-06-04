@@ -60,10 +60,9 @@ T* MyAllocator<T>::allocate(const size_t n)
 }
 
 template<class T>
-void MyAllocator<T>::deallocate(T * const, size_t)
+void MyAllocator<T>::deallocate(T * const ptr, size_t n)
 {
-    pool.reset();
-    currentSize = 0;
+    currentSize -= n;
 }
 
 // мой список
