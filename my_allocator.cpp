@@ -60,7 +60,7 @@ T* MyAllocator<T>::allocate(const size_t n)
 }
 
 template<class T>
-void MyAllocator<T>::deallocate(T * const ptr, size_t n)
+void MyAllocator<T>::deallocate(T * const, size_t n)
 {
     currentSize -= n;
 }
